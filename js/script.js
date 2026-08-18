@@ -165,36 +165,21 @@
   });
 
   /* ============================================================
-     CAROUSEL — AMOSTRA DO PDF
+     EFEITO DE ONDA (RIPPLE) AO CLICAR EM BOTÕES
      ============================================================ */
-  const track = document.getElementById('carTrack');
-  if (track) {
-    track.classList.add('carousel-track-inner');
-    const slides = track.querySelectorAll('.carousel-slide');
-    const total = slides.length;
-    let current = 0;
-
-    const currentEl = document.getElementById('carCurrent');
-    const totalEl = document.getElementById('carTotal');
-    if (totalEl) totalEl.textContent = String(total).padStart(2, '0');
-
-    function update() {
-      track.style.transform = 'translateX(-' + current * 100 + '%)';
-      if (currentEl) currentEl.textContent = String(current + 1).padStart(2, '0');
-    }
-
-    const prevBtn = document.getElementById('carPrev');
-    const nextBtn = document.getElementById('carNext');
-    if (prevBtn) prevBtn.addEventListener('click', function () {
-      current = (current - 1 + total) % total;
-      update();
+  document.querySelectorAll('.btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      const rect = btn.getBoundingClientRect();
+      const d = Math.max(rect.width, rect.height);
+      const span = document.createElement('span');
+      span.className = 'btn-ripple';
+      span.style.width = span.style.height = d + 'px';
+      span.style.left = (e.clientX - rect.left - d / 2) + 'px';
+      span.style.top = (e.clientY - rect.top - d / 2) + 'px';
+      btn.appendChild(span);
+      setTimeout(function () { span.remove(); }, 600);
     });
-    if (nextBtn) nextBtn.addEventListener('click', function () {
-      current = (current + 1) % total;
-      update();
-    });
-    update();
-  }
+  });
 
   /* ============================================================
      LINKS DO RODAPÉ (placeholders)
