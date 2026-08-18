@@ -4,8 +4,8 @@
   /* ============================================================
      LINKS DE CHECKOUT — COLE AQUI OS LINKS REAIS DA KIWIFY
      ============================================================ */
-  const ESSENCIAL_CHECKOUT_URL = '#'; // ← cole aqui o link da Kiwify do plano ESSENCIAL
-  const COMPLETO_CHECKOUT_URL = '#';  // ← cole aqui o link da Kiwify da EXPERIÊNCIA COMPLETA
+  const ESSENCIAL_CHECKOUT_URL = 'https://pay.kiwify.com.br/rfyiVTj'; // plano ESSENCIAL (R$ 19,90)
+  const COMPLETO_CHECKOUT_URL = 'https://pay.kiwify.com.br/UF2aOmG';  // EXPERIÊNCIA COMPLETA (R$ 29,90)
 
   document.querySelectorAll('[data-checkout]').forEach(function (el) {
     const kind = el.getAttribute('data-checkout');
