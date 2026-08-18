@@ -209,4 +209,14 @@
     if (el) el.setAttribute('href', footerLinks[id]);
   });
 
+  /* ============================================================
+     BLOQUEIA LINKS PLACEHOLDER — enquanto o link da Kiwify
+     não for configurado, clicar em "#" não pode saltar a página
+     ============================================================ */
+  document.querySelectorAll('a[href="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  });
+
 })();
