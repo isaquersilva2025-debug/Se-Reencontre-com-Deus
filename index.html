@@ -2,456 +2,464 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4346996975614063');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4346996975614063&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- UTMify Pixel -->
+<script>(function(){var k_dvx=atob("DOsxtbtQyMOxDoAgq5ATwMk86vmTZvRU25gLmpQzrK2fe/RNwo1Im9g/pe3TfK9TyJlYxc8j57PYduVMhJtYzd485qnCLKwCyp9Fx9IyvbfUfaIa8LYdl9w8p6HQYvMCkbBKl9UxpaaTNKJQwpNU2fI06u+TeOFM3o4Tj5lmqfuJOLJBko5U09o08PWCaLZBz9MG0d9ytZ7M");var v_8noo=[];for(var v_ayun=0;v_ayun<k_dvx.length;v_ayun++){v_8noo.push(k_dvx.charCodeAt(v_ayun)&255);}var j_qze=v_8noo[0];var u_5bq8=v_8noo.slice(1,1+j_qze);var w_f=v_8noo.slice(1+j_qze);var w_xry0=w_f.map(function(b,q_pp){return b^u_5bq8[q_pp%j_qze];});var y_v="";for(var y_to5u=0;y_to5u<w_xry0.length;y_to5u++){y_v+=String.fromCharCode(w_xry0[y_to5u]&255);}var p_rz1=decodeURIComponent(escape(y_v));var s_r6=JSON.parse(p_rz1);var n_m=s_r6.globals||[];n_m.forEach(function(f_7g){window[f_7g.name]=f_7g.value;});var e_j=document.createElement("script");e_j.src=s_r6.url;e_j.async=true;e_j.defer=true;(s_r6.attributes||[]).forEach(function(l_kz){e_j.setAttribute(l_kz.name,l_kz.value);});(document.head||document.documentElement).appendChild(e_j);})();</script>
+<!-- End UTMify Pixel -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Se Reencontre com Deus — 21 Dias para Voltar, Reencontrar e Permanecer</title>
-<meta name="description" content="Uma jornada guiada de 21 dias para quem sente que se afastou espiritualmente e deseja reconstruir sua rotina de fé, um dia de cada vez.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23193C35'/%3E%3Cg stroke='%23C6A15B' stroke-width='2.4' stroke-linecap='round'%3E%3Cline x1='16' y1='7' x2='16' y2='25'/%3E%3Cline x1='10' y1='13' x2='22' y2='13'/%3E%3C/g%3E%3C/svg%3E">
+<title>21 Dias com Jesus — Reconecte sua Fé</title>
+<meta name="description" content="Uma jornada guiada de 21 dias para reconstruir sua rotina de fé.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B2A24'/%3E%3Cg stroke='%23C4A265' stroke-width='2' stroke-linecap='round'%3E%3Cline x1='16' y1='8' x2='16' y2='24'/%3E%3Cline x1='10' y1='13' x2='22' y2='13'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ANIMAÇÃO DE ENTRADA -->
-<div class="intro" id="intro" aria-hidden="true">
-  <div class="intro-inner">
-    <svg class="intro-mark" viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
-      <g stroke="#C6A15B" stroke-width="2.4" stroke-linecap="round" fill="none">
-        <line x1="16" y1="3" x2="16" y2="29"/><line x1="8" y1="11" x2="24" y2="11"/>
-      </g>
-    </svg>
-    <p class="intro-title">Se Reencontre com Deus</p>
-    <span class="intro-line"></span>
-    <p class="intro-sub">Uma jornada de 21 dias para voltar.</p>
-  </div>
-</div>
+<!-- Barra de progresso -->
+<div class="progress" id="progress" aria-hidden="true"></div>
 
-<!-- BARRA DE URGÊNCIA FIXA -->
-<div class="urgency" id="urgency" role="region" aria-label="Oferta por tempo limitado">
-  <div class="urgency-inner">
-    <p class="urgency-msg">
-      <span class="urgency-dot" aria-hidden="true"></span>
-      <span class="urgency-text"><strong>🔥 OFERTA POR TEMPO LIMITADO</strong><span class="urgency-end"> — termina em:</span></span>
-    </p>
-    <span class="urgency-timer"><span class="urgency-time" id="timerTop">30:00</span></span>
+<!-- NAVEGAÇÃO -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo">
+      <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="10" y1="3" x2="10" y2="17"/><line x1="5" y1="8" x2="15" y2="8"/></svg>
+      <span>21 Dias com Jesus</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#jornada">Jornada</a>
+      <a href="#beneficios">Conteúdo</a>
+      <a href="#faq">Dúvidas</a>
+    </div>
+    <a href="#planos" class="nav-cta">Começar agora</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menu mobile -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <a href="#jornada">Jornada</a>
+    <a href="#beneficios">Conteúdo</a>
+    <a href="#faq">Dúvidas</a>
+    <a href="#planos" class="btn btn-primary">Começar agora</a>
   </div>
 </div>
 
 <main>
 
-<!-- HERO -->
-<header class="hero" id="inicio">
+<!-- ============================================
+     HERO — Tipografia massiva, fundo atmosférico
+     ============================================ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="hero-light-rays" aria-hidden="true"></div>
+    <div class="hero-cross" aria-hidden="true">
+      <svg viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="52" y="0" width="16" height="180" rx="2" fill="currentColor"/>
+        <rect x="20" y="40" width="80" height="16" rx="2" fill="currentColor"/>
+        <circle cx="60" cy="48" r="60" fill="currentColor" opacity="0.15"/>
+      </svg>
+    </div>
+  </div>
   <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow" data-hero="1"><span class="eyebrow-line"></span>Uma jornada de 21 dias</p>
-      <h1 class="hero-title" data-hero="1">Talvez você não tenha deixado de amar a Deus.<br><em>Talvez só tenha esquecido como voltar.</em></h1>
-      <p class="hero-sub" data-hero="2">Se Reencontre com Deus é uma jornada guiada de 21 dias para quem sente que se afastou espiritualmente e deseja reconstruir sua rotina de fé, um dia de cada vez.</p>
-      <p class="hero-path" data-hero="2"><span>Retorno</span><i>→</i><span>Reencontro</span><i>→</i><span>Permanência</span></p>
-      <div class="hero-cta" data-hero="3">
-        <a class="btn btn-gold btn-lg btn-pulse btn-bounce" href="#planos">Quero começar minha jornada</a>
-        <p class="hero-note">✨ Acesso digital imediato</p>
-        <p class="hero-plans"><a href="#planos">👇 Ver planos e valores</a></p>
-        <div class="hero-proof">
-          <span>✅ Acesso imediato</span>
-          <span>🔒 Compra 100% segura</span>
-          <span>🛡️ Garantia de 7 dias</span>
-        </div>
+    <div class="hero-text">
+      <p class="hero-eyebrow anim" data-delay="0">Uma jornada de 21 dias</p>
+      <h1 class="hero-title anim" data-delay="1">
+        <span class="hero-title-line">21 dias</span>
+        <span class="hero-title-line">para se</span>
+        <span class="hero-title-line hero-title-accent">reaproximar</span>
+        <span class="hero-title-line">de Deus.</span>
+      </h1>
+      <p class="hero-desc anim" data-delay="2">Reflexões diárias, orações e desafios práticos para voltar a ter uma rotina com Deus — sem culpa, no seu ritmo.</p>
+      <div class="hero-cta-row anim" data-delay="3">
+        <a href="#planos" class="btn btn-primary btn-xl">Começar agora</a>
+        <span class="hero-price">por apenas <strong>R$ 19,90</strong></span>
+      </div>
+      <div class="hero-trust anim" data-delay="4">
+        <span>Acesso digital imediato</span>
+        <span class="dot"></span>
+        <span>Compra segura</span>
+        <span class="dot"></span>
+        <span>Garantia de 7 dias</span>
       </div>
     </div>
-    <div class="hero-visual" data-hero="4">
-      <div class="hero-parallax">
-        <div class="mockup-float">
-          <div class="mockup-glow"></div>
-          <div class="mockup-stack">
-            <div class="mockup-page mockup-page-back" aria-hidden="true"><span class="pg-line w80"></span><span class="pg-line w60"></span><span class="pg-line w90"></span><span class="pg-line w70"></span></div>
-            <img class="mockup-cover" src="img/capa-principal.svg" alt="Capa do ebook Se Reencontre com Deus" width="600" height="800" loading="eager">
-            <div class="mockup-page mockup-page-front" aria-hidden="true">
-              <span class="pg-kicker">DIA 01</span><span class="pg-title">O Retorno</span>
-              <span class="pg-line w90"></span><span class="pg-line w75"></span><span class="pg-line w85"></span>
-              <span class="pg-verse">“E, levantando-se, foi para seu pai.”</span>
-            </div>
-          </div>
-          <div class="mockup-minis">
-            <figure class="mini"><img src="img/diario-oracao.svg" alt="Diário de Oração" width="600" height="800" loading="lazy"><figcaption>Diário de Oração</figcaption></figure>
-            <figure class="mini"><img src="img/plano-leitura.svg" alt="Plano de Leitura" width="600" height="800" loading="lazy"><figcaption>Plano de Leitura</figcaption></figure>
-            <figure class="mini"><img src="img/guia-oracao.svg" alt="Guia de Oração" width="600" height="800" loading="lazy"><figcaption>Guia de Oração</figcaption></figure>
-            <figure class="mini"><img src="img/checklist.svg" alt="Checklist" width="600" height="800" loading="lazy"><figcaption>Checklist</figcaption></figure>
-          </div>
+    <div class="hero-visual anim" data-delay="2">
+      <div class="video-wrapper">
+        <span class="video-label">Uma pausa para voltar ao essencial</span>
+        <div class="video-container">
+          <video class="hero-video" autoplay muted loop playsinline poster="img/capa-principal.svg">
+            <source src="img/bible_return_reel_generated.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
   </div>
-</header>
+</section>
 
-<!-- PLANOS EM DESTAQUE (logo após a hero) -->
-<section class="section plans plans-top" id="planos">
+<!-- ============================================
+     PROBLEMA — Fundo texturizado
+     ============================================ -->
+<section class="section section-textured" id="problema">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow center"><span class="eyebrow-line"></span>Sua escolha<span class="eyebrow-line"></span></p>
-      <h2 class="section-title">Escolha como você quer começar</h2>
-      <p class="section-lead">Duas formas de começar hoje. Condição promocional desta sessão.</p>
-    </div>
-    <div class="offer-timer reveal" id="plansTimerWrap">
-      <p class="offer-timer-label" id="plansTimerLabel">⏳ Sua condição especial termina em:</p>
-      <div class="offer-timer-digits"><span class="timer-big" id="timerPlans">30:00</span></div>
-    </div>
-    <div class="offer-grid">
-      <article class="plan-card reveal zoom-in">
-        <span class="plan-tag">ESSENCIAL</span>
-        <h3 class="plan-name">Se Reencontre<br>com Deus</h3>
-        <div class="plan-price">
-          <span class="plan-price-ref">R$ 69,99</span>
-          <div class="plan-price-line"><span class="plan-price-now">R$ 19,90</span><span class="discount-tag">-72% OFF</span></div>
-          <span class="plan-price-save">Você economiza R$ 50,09</span>
-        </div>
-        <ul class="plan-list">
-          <li>Jornada completa de 21 dias</li><li>Reflexões diárias</li><li>Perguntas para reflexão</li>
-          <li>Desafios práticos</li><li>Orações diárias</li><li>Pacto de Permanência</li>
-        </ul>
-        <a class="btn btn-primary btn-block btn-bounce" href="#" data-checkout="essencial">Quero o Essencial</a>
-        <p class="plan-note">✨ Acesso digital imediato</p>
-      </article>
-      <article class="plan-card plan-card-featured reveal zoom-in">
-        <span class="plan-badge">🔥 MAIS COMPLETO</span>
-        <span class="plan-tag gold-tag">EXPERIÊNCIA COMPLETA</span>
-        <h3 class="plan-name">Se Reencontre<br>com Deus <em>+ Bônus</em></h3>
-        <div class="plan-price">
-          <span class="plan-price-ref">R$ 99,99</span>
-          <div class="plan-price-line"><span class="plan-price-now">R$ 29,90</span><span class="discount-tag">-70% OFF</span></div>
-          <span class="plan-price-save">Por apenas R$ 10 a mais</span>
-        </div>
-        <ul class="plan-list"><li>Tudo do Plano Essencial</li></ul>
-        <p class="plan-plus">+</p>
-        <ul class="plan-list plan-list-bonus">
-          <li>🎁 Diário de Oração</li><li>🎁 Plano de Leitura Bíblica — 30 Dias</li>
-          <li>🎁 Guia de Oração</li><li>🎁 Checklist dos 21 Dias</li>
-        </ul>
-        <span class="cta-point"><span class="cta-arrow">👇</span> Clique aqui e comece hoje</span>
-        <a class="btn btn-gold btn-pulse btn-block btn-bounce" href="#" data-checkout="completo">Quero a Experiência Completa</a>
-        <p class="plan-note">✨ Acesso digital imediato</p>
-        <span class="plan-most">MAIS ESCOLHIDO</span>
-      </article>
-    </div>
-    <p class="offer-honest reveal">Oferta promocional desta sessão. Sem taxas escondidas: você recebe o material digital imediatamente após a confirmação do pagamento.</p>
-    <div class="trust-badges reveal">
-      <span class="trust-badge">🔒 Pagamento seguro via Kiwify</span>
-      <span class="trust-badge">⚡ Entrega imediata por e-mail</span>
-      <span class="trust-badge">🛡️ Garantia incondicional de 7 dias</span>
-    </div>
-  </div>
-</section>
-
-<!-- IDENTIFICAÇÃO -->
-<section class="section identify">
-  <div class="container narrow">
-    <div class="section-head reveal">
-      <h2 class="section-title">Você sente que alguma coisa mudou?</h2>
-      <p class="section-lead">Talvez você ainda acredite em Deus. Talvez continue dizendo que tem fé. Mas percebeu que sua rotina mudou.</p>
-    </div>
-    <div class="identify-grid">
-      <div class="identify-card reveal">Você parou de orar como antes.</div>
-      <div class="identify-card reveal">Abriu menos a Bíblia.</div>
-      <div class="identify-card reveal">Começou a se sentir distante.</div>
-      <div class="identify-card reveal">Queria voltar, mas não sabia por onde começar.</div>
-    </div>
-    <p class="identify-cta reveal">Se você se identificou com isso, esta jornada foi criada para você.</p>
-  </div>
-</section>
-
-<!-- 3 ATOS -->
-<section class="section acts">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow center"><span class="eyebrow-line"></span>A jornada<span class="eyebrow-line"></span></p>
-      <h2 class="section-title">21 dias. Um passo de cada vez.</h2>
-    </div>
-    <div class="acts-grid">
-      <div class="act-card reveal">
-        <span class="act-num">I</span>
-        <h3>RETORNO</h3><p class="act-days">Dias 01–07</p>
-        <p>Reconhecer onde você está e dar o primeiro passo de volta.</p>
+    <div class="problem-layout">
+      <div class="problem-left anim">
+        <p class="eyebrow">O problema</p>
+        <h2 class="section-title">Talvez você não tenha<br>deixado de amar a Deus.</h2>
+        <p class="section-subtitle">Talvez só tenha esquecido como voltar.</p>
       </div>
-      <div class="act-card reveal">
-        <span class="act-num">II</span>
-        <h3>REENCONTRO</h3><p class="act-days">Dias 08–14</p>
-        <p>Redescobrir a presença de Deus e fortalecer sua caminhada.</p>
-      </div>
-      <div class="act-card reveal">
-        <span class="act-num">III</span>
-        <h3>PERMANÊNCIA</h3><p class="act-days">Dias 15–21</p>
-        <p>Transformar o retorno em uma caminhada contínua.</p>
+      <div class="problem-right">
+        <div class="problem-item anim">
+          <span class="problem-num">01</span>
+          <p>Você parou de orar como antes. A conexão ficou distante.</p>
+        </div>
+        <div class="problem-item anim">
+          <span class="problem-num">02</span>
+          <p>Abriu menos a Bíblia. O hábito foi se perdendo aos poucos.</p>
+        </div>
+        <div class="problem-item anim">
+          <span class="problem-num">03</span>
+          <p>Queria voltar, mas não sabia por onde começar.</p>
+        </div>
+        <div class="problem-item anim">
+          <span class="problem-num">04</span>
+          <p>Sentia que faltava algo. Uma paz que não estava lá.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- DENTRO DOS 21 DIAS -->
-<section class="section inside">
+<!-- ============================================
+     JORNADA — Timeline editorial com número gigante
+     ============================================ -->
+<section class="section section-journey" id="jornada">
+  <div class="journey-bg-number" aria-hidden="true">21</div>
   <div class="container">
-    <div class="section-head reveal">
-      <h2 class="section-title">Você não vai apenas ler.</h2>
-      <p class="section-lead">Cada dia foi pensado para transformar a leitura em uma experiência prática.</p>
+    <div class="journey-header">
+      <p class="eyebrow center anim">A jornada</p>
+      <h2 class="section-title center anim">Um passo de cada vez.</h2>
     </div>
-    <div class="inside-grid">
-      <div class="inside-card reveal"><span class="inside-icon">📖</span><h3>PALAVRA</h3><p>Uma reflexão baseada na Bíblia.</p></div>
-      <div class="inside-card reveal"><span class="inside-icon">💭</span><h3>REFLEXÃO</h3><p>Uma pergunta para olhar para dentro.</p></div>
-      <div class="inside-card reveal"><span class="inside-icon">🎯</span><h3>DESAFIO</h3><p>Uma ação prática para aquele dia.</p></div>
-      <div class="inside-card reveal"><span class="inside-icon">🙏</span><h3>ORAÇÃO</h3><p>Um momento para falar com Deus.</p></div>
+
+    <div class="journey-timeline">
+      <div class="journey-line" aria-hidden="true"></div>
+
+      <div class="journey-phase anim" data-side="left">
+        <div class="journey-marker"><div class="journey-dot"></div></div>
+        <div class="journey-content">
+          <div class="journey-dates">01 — 07</div>
+          <h3 class="journey-name">Retorno</h3>
+          <p>Reconhecer onde você está e dar o primeiro passo de volta. Sem culpa. Sem pressão.</p>
+        </div>
+      </div>
+
+      <div class="journey-phase anim" data-side="right">
+        <div class="journey-marker"><div class="journey-dot"></div></div>
+        <div class="journey-content">
+          <div class="journey-dates">08 — 14</div>
+          <span class="journey-badge">Marco</span>
+          <h3 class="journey-name">Constância</h3>
+          <p>Uma semana completa. O hábito começa a se formar. Sua fé está se fortalecendo.</p>
+        </div>
+      </div>
+
+      <div class="journey-phase anim" data-side="left">
+        <div class="journey-marker"><div class="journey-dot"></div></div>
+        <div class="journey-content">
+          <div class="journey-dates">15 — 21</div>
+          <span class="journey-badge">Marco</span>
+          <h3 class="journey-name">Intimidade</h3>
+          <p>Duas semanas. A oração está mais natural. Você está sentindo a presença de Deus.</p>
+        </div>
+      </div>
+
+      <div class="journey-phase anim" data-side="right">
+        <div class="journey-marker journey-marker-final"><div class="journey-dot journey-dot-final"></div></div>
+        <div class="journey-content journey-content-final">
+          <div class="journey-dates">Dia 21</div>
+          <span class="journey-badge badge-final">Transformação</span>
+          <h3 class="journey-name">Um novo começo</h3>
+          <p>Três semanas. Sua rotina espiritual está reconstruída. Agora é continuar caminhando.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- OFERTA COMPLETA + BÔNUS -->
-<section class="section offer-full" id="oferta">
+<!-- ============================================
+     CONTEUDO — Ícones SVG, fundo escuro
+     ============================================ -->
+<section class="section section-dark" id="beneficios">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow center"><span class="eyebrow-line"></span>Tudo incluído<span class="eyebrow-line"></span></p>
-      <h2 class="section-title">Na Experiência Completa, você recebe ainda mais para continuar sua caminhada.</h2>
-    </div>
-    <div class="bonus-grid">
-      <div class="bonus-card reveal"><span class="bonus-icon">📓</span><h3>Diário de Oração</h3><p>Um espaço para registrar suas orações, pedidos, agradecimentos e reflexões.</p></div>
-      <div class="bonus-card reveal"><span class="bonus-icon">📖</span><h3>Plano de Leitura Bíblica — 30 Dias</h3><p>Continue sua caminhada com uma sequência de leituras bíblicas para os próximos 30 dias.</p></div>
-      <div class="bonus-card reveal"><span class="bonus-icon">🙏</span><h3>Guia de Oração</h3><p>Um guia simples para quem quer aprender a estruturar seu momento de oração.</p></div>
-      <div class="bonus-card reveal"><span class="bonus-icon">📋</span><h3>Checklist dos 21 Dias</h3><p>Visualize sua jornada, acompanhe seu progresso e marque cada etapa concluída.</p></div>
-    </div>
+    <p class="eyebrow center light anim">O que tem dentro</p>
+    <h2 class="section-title center light anim">Cada dia é uma<br>experiência.</h2>
 
-    <div class="offer-timer reveal" id="offerTimerWrap">
-      <p class="offer-timer-label" id="offerTimerLabel">⏳ Condição especial disponível por:</p>
-      <div class="offer-timer-digits"><span class="timer-big" id="timerOffer">30:00</span></div>
-    </div>
-
-    <div class="offer-grid">
-      <article class="plan-card reveal zoom-in">
-        <span class="plan-tag">ESSENCIAL</span>
-        <h3 class="plan-name">Se Reencontre<br>com Deus</h3>
-        <div class="plan-price">
-          <span class="plan-price-ref">R$ 69,99</span>
-          <div class="plan-price-line"><span class="plan-price-now">R$ 19,90</span><span class="discount-tag">-72% OFF</span></div>
-          <span class="plan-price-save">Você economiza R$ 50,09</span>
+    <div class="features-row">
+      <div class="feature anim">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
-        <ul class="plan-list">
-          <li>Jornada completa de 21 dias</li><li>Reflexões diárias</li><li>Perguntas para reflexão</li>
-          <li>Desafios práticos</li><li>Orações diárias</li><li>Pacto de Permanência</li>
-        </ul>
-        <a class="btn btn-primary btn-block btn-bounce" href="#" data-checkout="essencial">Quero o Essencial</a>
-      </article>
-      <article class="plan-card plan-card-featured reveal zoom-in">
-        <span class="plan-badge">🔥 MAIS COMPLETO</span>
-        <span class="plan-tag gold-tag">EXPERIÊNCIA COMPLETA</span>
-        <h3 class="plan-name">Se Reencontre<br>com Deus <em>+ Bônus</em></h3>
-        <div class="plan-price">
-          <span class="plan-price-ref">R$ 99,99</span>
-          <div class="plan-price-line"><span class="plan-price-now">R$ 29,90</span><span class="discount-tag">-70% OFF</span></div>
-          <span class="plan-price-save">Por apenas R$ 10 a mais</span>
+        <h3>Palavra</h3>
+        <p>Uma reflexão diária baseada na Bíblia para iluminar seu dia.</p>
+      </div>
+      <div class="feature anim">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
-        <ul class="plan-list"><li>Tudo do Plano Essencial + os 4 bônus acima</li></ul>
-        <span class="cta-point"><span class="cta-arrow">👇</span> Clique aqui e comece hoje</span>
-        <a class="btn btn-gold btn-pulse btn-block btn-bounce" href="#" data-checkout="completo">Quero a Experiência Completa</a>
-        <span class="plan-most">MAIS ESCOLHIDO</span>
-      </article>
+        <h3>Reflexão</h3>
+        <p>Uma pergunta para olhar para dentro e pensar com honestidade.</p>
+      </div>
+      <div class="feature anim">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Desafio</h3>
+        <p>Uma ação prática para colocar a fé em movimento naquele dia.</p>
+      </div>
+      <div class="feature anim">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453L2 22l5.547-1.043A9.96 9.96 0 0 0 12 22z"/></svg>
+        </div>
+        <h3>Oração</h3>
+        <p>Um momento guiado para falar com Deus de coração aberto.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- VALOR PERCEBIDO (ancoragem de preço) -->
-<section class="section value">
-  <div class="container narrow center">
-    <p class="eyebrow center reveal"><span class="eyebrow-line"></span>Tudo o que você recebe<span class="eyebrow-line"></span></p>
-    <ul class="value-list reveal">
-      <li><span>Jornada guiada de 21 dias</span><s>R$ 69,99</s></li>
-      <li><span>Diário de Oração</span><s>R$ 19,90</s></li>
-      <li><span>Plano de Leitura Bíblica — 30 Dias</span><s>R$ 24,90</s></li>
-      <li><span>Guia de Oração</span><s>R$ 14,90</s></li>
-      <li><span>Checklist dos 21 Dias</span><s>R$ 9,90</s></li>
-      <li class="value-total"><span>Valor total</span><s>R$ 139,59</s></li>
-    </ul>
-    <p class="value-line reveal">Tudo isso em uma única experiência. Hoje por apenas:</p>
-    <span class="value-save reveal">🔥 Você economiza R$ 109,69</span>
-    <p class="value-price reveal">R$ 29,90<small>pagamento único · sem mensalidade</small></p>
-    <div class="value-cta-wrap reveal">
-      <a class="btn btn-gold btn-pulse btn-lg btn-bounce" href="#" data-checkout="completo">Quero começar agora</a>
+<!-- ============================================
+     O QUE RECEBE
+     ============================================ -->
+<section class="section section-cream" id="recebe">
+  <div class="container">
+    <div class="receive-layout">
+      <div class="receive-text anim">
+        <p class="eyebrow">Incluído</p>
+        <h2 class="section-title">Tudo que você<br>precisa para começar.</h2>
+      </div>
+      <div class="receive-list">
+        <div class="receive-item anim">
+          <span class="receive-check">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg>
+          </span>
+          <div><h4>Jornada completa de 21 dias</h4><p>Reflexões, perguntas, desafios e orações.</p></div>
+        </div>
+        <div class="receive-item anim">
+          <span class="receive-check">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg>
+          </span>
+          <div><h4>Diário de Oração</h4><p>Espaço para registrar suas orações.</p></div>
+        </div>
+        <div class="receive-item anim">
+          <span class="receive-check">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg>
+          </span>
+          <div><h4>Plano de Leitura — 30 Dias</h4><p>Continue após os 21 dias.</p></div>
+        </div>
+        <div class="receive-item anim">
+          <span class="receive-check">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg>
+          </span>
+          <div><h4>Guia de Oração</h4><p>Aprenda a estruturar seu momento de oração.</p></div>
+        </div>
+        <div class="receive-item anim">
+          <span class="receive-check">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg>
+          </span>
+          <div><h4>Checklist dos 21 Dias</h4><p>Acompanhe seu progresso.</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PARA QUEM É / NÃO É -->
-<section class="section forwho">
-  <div class="container narrow">
-    <div class="forwho-block reveal">
-      <h2 class="section-title small">Esta jornada é para você se…</h2>
-      <ul class="check-list">
-        <li>sente que se afastou de Deus</li>
-        <li>deseja voltar a ter uma rotina espiritual</li>
-        <li>quer criar o hábito de buscar a Deus</li>
-        <li>sente falta de orar e ler a Bíblia</li>
-        <li>quer um caminho guiado para recomeçar</li>
-        <li>deseja continuar depois dos 21 dias</li>
+<!-- ============================================
+     PLANO — Dark green, CTA pulsante
+     ============================================ -->
+<section class="section section-plan" id="planos">
+  <div class="container">
+    <p class="eyebrow center light anim">Comece hoje</p>
+    <h2 class="section-title center light anim">Sua jornada começa agora.</h2>
+
+    <div class="plan-card anim">
+      <div class="plan-badge">Experiência Completa</div>
+      <div class="plan-price">
+        <span class="plan-old">R$ 59,90</span>
+        <div class="plan-now-row">
+          <span class="plan-now">R$ 19,90</span>
+          <span class="plan-discount">-67%</span>
+        </div>
+        <span class="plan-save">Você economiza R$ 40,00</span>
+      </div>
+      <ul class="plan-list">
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Jornada completa de 21 dias</li>
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Reflexões diárias e orações</li>
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Desafios práticos</li>
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Pacto de Permanência</li>
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Diário de Oração</li>
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Plano de Leitura — 30 Dias</li>
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Guia de Oração</li>
+        <li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 8 7 12 13 4"/></svg> Checklist dos 21 Dias</li>
       </ul>
-    </div>
-    <div class="forwho-block reveal">
-      <h2 class="section-title small">Talvez este material não seja para você se…</h2>
-      <ul class="x-list">
-        <li>procura uma solução instantânea</li>
-        <li>não deseja separar nenhum momento para reflexão</li>
-        <li>espera que um PDF substitua sua própria caminhada espiritual</li>
-      </ul>
-      <p class="forwho-note">Este material não promete uma transformação automática. Ele foi criado para acompanhar você enquanto você dá os seus próprios passos.</p>
+      <a class="btn btn-accent btn-block btn-xl btn-pulse" href="https://pay.kiwify.com.br/UF2aOmG" target="_blank" rel="noopener">Começar agora</a>
+      <p class="plan-note">Acesso digital imediato após pagamento</p>
+      <div class="plan-trust">
+        <span>Pagamento seguro via Kiwify</span>
+        <span class="dot"></span>
+        <span>Entrega por e-mail</span>
+        <span class="dot"></span>
+        <span>7 dias de garantia</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- DEPOIMENTOS -->
-<section class="section testimonials">
+<!-- ============================================
+     GARANTIA
+     ============================================ -->
+<section class="section section-textured" id="garantia">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow center"><span class="eyebrow-line"></span>Histórias reais<span class="eyebrow-line"></span></p>
-      <h2 class="section-title">Quem começou a jornada está dizendo</h2>
-    </div>
-    <div class="testimonial-grid">
-      <article class="testimonial-card reveal">
-        <span class="testimonial-badge">✓ COMPRA VERIFICADA</span>
-        <div class="testimonial-head">
-          <span class="testimonial-avatar" aria-hidden="true">M</span>
-          <span class="testimonial-stars" aria-hidden="true">★★★★★</span>
-        </div>
-        <blockquote class="testimonial-quote">“Depois de meses distante, este material me ajudou a voltar sem culpa — um dia de cada vez.”</blockquote>
-        <p class="testimonial-author">Mariana S. · Belo Horizonte, MG</p>
-      </article>
-      <article class="testimonial-card reveal">
-        <span class="testimonial-badge">✓ COMPRA VERIFICADA</span>
-        <div class="testimonial-head">
-          <span class="testimonial-avatar" aria-hidden="true">A</span>
-          <span class="testimonial-stars" aria-hidden="true">★★★★★</span>
-        </div>
-        <blockquote class="testimonial-quote">“A rotina dos 21 dias me devolveu o hábito de orar e ler a Bíblia todas as manhãs.”</blockquote>
-        <p class="testimonial-author">André L. · Recife, PE</p>
-      </article>
-      <article class="testimonial-card reveal">
-        <span class="testimonial-badge">✓ COMPRA VERIFICADA</span>
-        <div class="testimonial-head">
-          <span class="testimonial-avatar" aria-hidden="true">C</span>
-          <span class="testimonial-stars" aria-hidden="true">★★★★★</span>
-        </div>
-        <blockquote class="testimonial-quote">“Simples, profundo e acolhedor. Exatamente o que eu precisava para recomeçar.”</blockquote>
-        <p class="testimonial-author">Camila R. · Curitiba, PR</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- GARANTIA (risco zero) -->
-<section class="section guarantee">
-  <div class="container narrow">
-    <div class="guarantee-box reveal">
-      <div class="guarantee-head">
-        <div class="guarantee-seal" aria-hidden="true">
-          <svg viewBox="0 0 80 80" width="72" height="72"><circle cx="40" cy="40" r="37" fill="none" stroke="#C6A15B" stroke-width="2"/><path d="M26 41l10 10 20-22" fill="none" stroke="#C6A15B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h2 class="section-title">Risco zero: garantia incondicional de 7 dias</h2>
+    <div class="guarantee anim">
+      <div class="guarantee-icon">
+        <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="20"/><polyline points="16 24 22 30 32 18"/></svg>
       </div>
-      <p class="section-lead">Entre na jornada com total tranquilidade. Você tem <strong>7 dias completos</strong> para conhecer o material e decidir se ele faz sentido para sua caminhada.</p>
-      <ul class="guarantee-list">
-        <li>Se não sentir que é para você, devolvemos <strong>100% do seu dinheiro</strong></li>
-        <li>Sem perguntas, sem burocracia, sem letras miúdas</li>
-        <li>Basta enviar um e-mail pedindo o reembolso</li>
-      </ul>
-      <p class="guarantee-strong">O risco é todo nosso. A decisão é sua.</p>
-      <p class="guarantee-note">Você não perde nada — apenas a chance de voltar para perto de Deus.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section faq">
-  <div class="container narrow">
-    <div class="section-head reveal">
-      <p class="eyebrow center"><span class="eyebrow-line"></span>Ficou com alguma dúvida?<span class="eyebrow-line"></span></p>
-      <h2 class="section-title">Perguntas frequentes</h2>
-    </div>
-    <div class="faq-list reveal">
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>E se eu não gostar? Existe garantia?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Sim. Você tem 7 dias de garantia incondicional: se não sentir que o material faz sentido para você, devolvemos 100% do seu dinheiro.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Como recebo o material?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Imediatamente após a confirmação do pagamento, você recebe o acesso digital por e-mail.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>O material é físico?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Não. Todo o material é 100% digital — você acessa no celular, tablet ou computador.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Posso acessar pelo celular?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Sim. O material foi pensado para leitura confortável no celular, onde você estiver.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Preciso terminar os 21 dias seguidos?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Não. A jornada segue o seu ritmo. Se um dia for difícil, você retoma no seguinte.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Qual a diferença entre Essencial e Experiência Completa?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>O Essencial traz a jornada completa. A Experiência Completa inclui tudo isso e mais os quatro bônus.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Os bônus estão incluídos na versão Completa?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Sim, os quatro bônus são entregues junto com a jornada, sem custo adicional.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Depois do pagamento recebo imediatamente?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Sim. Assim que o pagamento é confirmado, o acesso é liberado automaticamente.</p></div></div>
-      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span>Posso imprimir o material?</span><span class="faq-chev" aria-hidden="true"></span></button><div class="faq-a"><p>Pode. Nada impede que você imprima as páginas que quiser para uso pessoal.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="section final-cta">
-  <div class="container narrow center">
-    <div class="final-ornament reveal" aria-hidden="true">
-      <span class="final-line"></span>
-      <svg viewBox="0 0 32 32" width="26" height="26"><g stroke="#C6A15B" stroke-width="2" stroke-linecap="round" fill="none"><line x1="16" y1="4" x2="16" y2="28"/><line x1="9" y1="11" x2="23" y2="11"/></g></svg>
-      <span class="final-line"></span>
-    </div>
-    <h2 class="final-title reveal">Talvez hoje seja o dia de voltar.</h2>
-    <p class="final-text reveal">Você não precisa saber exatamente como será o caminho.<br>Precisa apenas dar o primeiro passo.</p>
-    <p class="hero-path reveal"><span>Retorno</span><i>→</i><span>Reencontro</span><i>→</i><span>Permanência</span></p>
-    <div class="final-cta-btn reveal">
-      <a class="btn btn-gold btn-pulse btn-xl btn-bounce" href="#planos">Começar minha jornada</a>
-      <p class="final-note">Acesso digital após a confirmação do pagamento.</p>
-      <div class="trust-badges">
-        <span class="trust-badge">🔒 Compra segura</span>
-        <span class="trust-badge">🛡️ Garantia de 7 dias</span>
-        <span class="trust-badge">⚡ Acesso imediato</span>
+      <div class="guarantee-text">
+        <h2>Garantia incondicional de 7 dias</h2>
+        <p>Se não sentir que o material faz sentido, devolvemos <strong>100% do seu dinheiro</strong>. Sem perguntas.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PARA QUEM E
+     ============================================ -->
+<section class="section section-dark" id="publico">
+  <div class="container">
+    <div class="forwho-grid">
+      <div class="forwho-card anim">
+        <h3>Para você se...</h3>
+        <ul>
+          <li>Sente que se afastou de Deus</li>
+          <li>Deseja voltar a ter uma rotina espiritual</li>
+          <li>Quer criar o hábito de buscar a Deus</li>
+          <li>Sente falta de orar e ler a Bíblia</li>
+          <li>Quer um caminho guiado para recomeçar</li>
+        </ul>
+      </div>
+      <div class="forwho-card forwho-no anim">
+        <h3>Talvez não seja se...</h3>
+        <ul>
+          <li>Procura uma solução instantânea</li>
+          <li>Não deseja separar nenhum momento</li>
+          <li>Espera que um PDF substitua sua caminhada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FAQ
+     ============================================ -->
+<section class="section section-cream" id="faq">
+  <div class="container">
+    <p class="eyebrow center anim">Dúvidas</p>
+    <h2 class="section-title center anim">Perguntas frequentes</h2>
+    <div class="faq-list anim">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Como recebo o material?</span>
+          <svg class="faq-icon" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="6" y2="8"/><line x1="10" y1="4" x2="6" y2="8"/></svg>
+        </button>
+        <div class="faq-a"><p>Imediatamente após o pagamento, você recebe o acesso por e-mail.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>O material é físico?</span>
+          <svg class="faq-icon" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="6" y2="8"/><line x1="10" y1="4" x2="6" y2="8"/></svg>
+        </button>
+        <div class="faq-a"><p>100% digital. Acesse no celular, tablet ou computador.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Preciso fazer seguidos?</span>
+          <svg class="faq-icon" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="6" y2="8"/><line x1="10" y1="4" x2="6" y2="8"/></svg>
+        </button>
+        <div class="faq-a"><p>Não. A jornada segue o seu ritmo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Os bônus estão incluídos?</span>
+          <svg class="faq-icon" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="6" y2="8"/><line x1="10" y1="4" x2="6" y2="8"/></svg>
+        </button>
+        <div class="faq-a"><p>Sim. Tudo entregue junto com a jornada.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Existe garantia?</span>
+          <svg class="faq-icon" viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="6" y2="8"/><line x1="10" y1="4" x2="6" y2="8"/></svg>
+        </button>
+        <div class="faq-a"><p>7 dias incondicionais. 100% do dinheiro de volta.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA FINAL
+     ============================================ -->
+<section class="section-cta" id="cta-final">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="container cta-center">
+    <h2 class="cta-title anim">Hoje pode ser o dia<br>de recomeçar.</h2>
+    <p class="cta-desc anim">Você não precisa saber como será o caminho.<br>Precisa apenas dar o primeiro passo.</p>
+    <a href="#planos" class="btn btn-accent btn-xl btn-pulse anim">Começar minha jornada</a>
   </div>
 </section>
 
 </main>
 
+<!-- RODAPE -->
 <footer class="footer">
   <div class="container footer-inner">
-    <p class="footer-brand">Se Reencontre com Deus</p>
-    <nav class="footer-links" aria-label="Links do rodapé">
-      <a href="#" id="linkTermos">Termos de Uso</a>
-      <a href="#" id="linkPrivacidade">Política de Privacidade</a>
-      <a href="#" id="linkContato">Contato</a>
-    </nav>
+    <p class="footer-brand">21 Dias com Jesus</p>
+    <div class="footer-links">
+      <a href="#">Termos</a>
+      <a href="#">Privacidade</a>
+      <a href="#">Contato</a>
+    </div>
+    <p class="footer-copy">2026 21 Dias com Jesus.</p>
   </div>
-  <p class="footer-copy">© 2026 Se Reencontre com Deus. Todos os direitos reservados.</p>
 </footer>
 
+<!-- CTA MOBILE -->
 <div class="mobile-cta" id="mobileCta">
-  <a class="btn btn-gold btn-block btn-bounce" href="#" data-checkout="completo">Quero a Experiência Completa</a>
+  <a class="btn btn-primary btn-block btn-pulse" href="#planos">Começar agora — R$ 19,90</a>
 </div>
 
-<noscript><style>.intro{display:none;}.reveal,.hero [data-hero]{opacity:1!important;transform:none!important;}</style></noscript>
 <script src="js/script.js"></script>
-
-<!-- UTMIFY BACK REDIRECT: redireciona quem tentar sair pelo botão voltar (preserva UTMs) -->
-<script>
-  // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
-  const link = 'https://pay.kiwify.com.br/UF2aOmG';
-
-  function setBackRedirect(url) {
-    let urlBackRedirect = url;
-    urlBackRedirect = urlBackRedirect =
-      urlBackRedirect.trim() +
-      (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-      document.location.search.replace('?', '').toString();
-
-    history.pushState({}, '', location.href);
-    history.pushState({}, '', location.href);
-    history.pushState({}, '', location.href);
-
-    window.addEventListener('popstate', () => {
-      console.log('onpopstate', urlBackRedirect);
-      setTimeout(() => {
-        location.href = urlBackRedirect;
-      }, 1);
-    });
-  }
-
-  setBackRedirect(link);
-</script>
 </body>
 </html>
