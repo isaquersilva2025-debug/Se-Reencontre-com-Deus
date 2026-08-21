@@ -86,14 +86,56 @@
     }, { passive: true });
   }
 
-  /* META PIXEL — InitiateCheckout */
+  /* EMAIL MODAL + META PIXEL */
+  var emailModal = document.getElementById('emailModal');
+  var emailForm = document.getElementById('emailForm');
+  var emailInput = document.getElementById('emailInput');
+  var emailModalClose = document.getElementById('emailModalClose');
+  var emailModalOverlay = document.getElementById('emailModalOverlay');
+  var checkoutUrl = 'https://pay.kiwify.com.br/UF2aOmG';
+
+  function openEmailModal(e) {
+    if (e) e.preventDefault();
+    emailModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () { emailInput.focus(); }, 300);
+  }
+
+  function closeEmailModal() {
+    emailModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (emailModal) {
+    emailModalClose.addEventListener('click', closeEmailModal);
+    emailModalOverlay.addEventListener('click', closeEmailModal);
+  }
+
+  /* Todos os botões de checkout abrem o modal */
   document.querySelectorAll('a[href*="kiwify"]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      if (typeof fbq === 'function') {
-        fbq('track', 'InitiateCheckout', { value: 19.90, currency: 'BRL' });
-      }
-    });
+    btn.addEventListener('click', openEmailModal);
   });
+
+  /* Ao enviar o email, redireciona pro checkout */
+  if (emailForm) {
+    emailForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = emailInput.value.trim();
+      if (!email) return;
+
+      /* Envia InitiateCheckout com email (melhora Event Match Quality) */
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          value: 19.90,
+          currency: 'BRL'
+        }, { em: email });
+      }
+
+      /* Redireciona pro checkout */
+      window.open(checkoutUrl, '_blank');
+      closeEmailModal();
+    });
+  }
 
   /* BLOCK PLACEHOLDERS */
   document.querySelectorAll('a[href="#"]').forEach(function (a) {
